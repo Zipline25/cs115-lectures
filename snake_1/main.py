@@ -27,6 +27,27 @@ while running:
   # clear screen
   screen.fill("white")
 
+  # draw rectangle
+  pygame.draw.rect(screen, 
+                   (0,255,0), 
+                   pygame.Rect((100,200),(100,50))
+                  )
+
+  pygame.draw.circle(screen, 
+                     "blue", 
+                     (100,200), 40
+                    )
+
+  pygame.draw.line(screen, 
+                   "red", 
+                   (100,100), (200,200), 5
+                  )
+
+  pygame.draw.ellipse(surface=screen, 
+                      color="red", 
+                      rect=pygame.Rect((100,100), (100,500))
+                     )
+
   # update screen
   pygame.display.flip()
 
